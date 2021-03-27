@@ -7,6 +7,7 @@
         [HideInInspector] _SrcBlend("__src", Float) = 1.0
         [HideInInspector] _DstBlend("__dst", Float) = 0.0
 		[HideInInspector] _AlphaClip("__clip", Float) = 0.0
+		[HideInInspector] _ZeroColor("Color", Color) = (0.0, 0.0, 0.0, 0.0)
 		_Cutoff("Alpha Cutoff", Range(0.0, 1.0)) = 0.5
 
 		// Surface Inputs
