@@ -6,19 +6,23 @@ namespace kTools.Decals
     {
 #region Fields
         static DecalRendererFeature s_Instance;
-        readonly DecalRenderPass m_RenderPass;
+        private DecalRenderPass m_RenderPass;
 #endregion
 
 #region Constructors
         public DecalRendererFeature()
         {
             s_Instance = this;
-            m_RenderPass = new DecalRenderPass();
         }
 #endregion
 
 #region Initialization
-        public override void Create()
+		public void OnEnable()
+		{
+			m_RenderPass = new DecalRenderPass();
+		}
+
+		public override void Create()
         {
             name = "Decals";
         }
