@@ -36,7 +36,7 @@ namespace kTools.Decals
                 ExecuteCommand(context, cmd);
 
                 // Sorting
-                var decals = DecalSystem.decals.OrderBy(x => x.decalData.sortingOrder);
+                var decals = DecalSystem.decals.Where(x => x.decalData != null).OrderBy(x => x.decalData.sortingOrder);
 
                 foreach(var decal in decals)
                 {
