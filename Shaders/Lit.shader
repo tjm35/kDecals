@@ -57,6 +57,7 @@
             #pragma shader_feature _SPECULAR_SETUP
 			#pragma shader_feature _EMISSION
 			#pragma shader_feature _NORMALMAP
+			#pragma shader_feature _OCCLUSIONMAP
 
 			// -------------------------------------
             // Universal Pipeline keywords

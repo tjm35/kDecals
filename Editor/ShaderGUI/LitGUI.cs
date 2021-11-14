@@ -148,6 +148,9 @@ namespace kTools.Decals.Editor
             // Normal
             material.SetKeyword("_NORMALMAP", material.GetTexture(PropertyNames.BumpMap) != null);
 
+            // Occlusion
+            material.SetKeyword("_OCCLUSIONMAP", material.GetTexture(PropertyNames.OcclusionMap) != null);
+
             // Emission
             bool hasEmissionMap = material.GetTexture(PropertyNames.EmissionMap) != null;
             Color emissionColor = material.GetColor(PropertyNames.EmissionColor);
