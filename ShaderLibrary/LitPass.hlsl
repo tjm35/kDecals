@@ -139,7 +139,7 @@ half4 LitPassFragment(Varyings input) : SV_Target
 
     half4 finalColor = UniversalFragmentPBR(inputData, surfaceData.albedo, surfaceData.metallic, surfaceData.specular, surfaceData.smoothness, surfaceData.occlusion, surfaceData.emission, surfaceData.alpha);
     finalColor.rgb = MixFog(finalColor.rgb, inputData.fogCoord);
-    CLAMP_PROJECTION(finalColor, input.positionPS, inputData.normalWS);
+    CLAMP_PROJECTION(finalColor, input.positionPS, input.normalWS);
     return finalColor;
 }
 
